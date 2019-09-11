@@ -7,13 +7,31 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".MainActivity">
-<Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="420dp"
-    android:layout_height="wrap_content"
-    android:background="@color/colorBackground"
-    android:title="@string/app"
-    android:titleTextColor="@color/colorTitle"
-    tools:ignore="MissingConstraints" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <RadioButton
+            android:text="@string/putted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            tools:ignore="MissingConstraints" />
+        <RadioButton
+            android:text="@string/notputted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:text="@string/disabled"
+            tools:ignore="MissingConstraints" />
+    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>

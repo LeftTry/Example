@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="app">App</string>
+    <string name="java">Java</string>
+    <string name="putted">Putted</string>
+    <string name="disabled">Disabled</string>
+    <string name="notputted">NotPutted</string>
 </resources>
