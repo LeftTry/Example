@@ -5,33 +5,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@drawable/background"
     tools:context=".MainActivity">
+
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
+
         <RadioButton
-            android:text="@string/putted"
+            android:onClick="PuttedClick"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
-            tools:ignore="MissingConstraints" />
-        <RadioButton
-            android:text="@string/notputted"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+            android:text="@string/putted"
             tools:ignore="MissingConstraints" />
 
         <RadioButton
-            android:clickable="false"
+            android:onClick="NotPuttedClick"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
+            android:text="@string/notputted"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:clickable="false"
             android:text="@string/disabled"
             tools:ignore="MissingConstraints" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SwitchButton" />
     </RadioGroup>
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/togglebutton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
 
 </android.support.constraint.ConstraintLayout>
